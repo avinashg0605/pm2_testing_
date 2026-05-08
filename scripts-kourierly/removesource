@@ -1,0 +1,9 @@
+#!/bin/bash
+if [ -d /var/www/html/admin-kourierly ]
+then
+rm -rf /var/www/html/admin-kourierly
+mkdir -p /var/www/html/admin-kourierly
+else
+echo "folder not exist"
+mkdir -p /var/www/html/admin-kourierly
+fi 
