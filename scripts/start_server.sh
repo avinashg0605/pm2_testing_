@@ -1,7 +1,12 @@
 #!/bin/bash
 
-# cd /home/ec2-user/pm2-test-app
 export NVM_DIR="/root/.nvm"
-/root/.nvm/versions/node/v22.22.2/bin/pm2 status
+export PATH="$NVM_DIR/versions/node/v22.22.2/bin:/usr/local/bin:/usr/bin:/bin"
 
-# pm2 save
+PM2_CMD="/root/.nvm/versions/node/v22.22.2/bin/pm2"
+
+cd /root/pm2-test-app
+
+$PM2_CMD status >> /tmp/output.log
+
+# $PM2_CMD save
