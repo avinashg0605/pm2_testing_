@@ -5,8 +5,7 @@ export PATH="$NVM_DIR/versions/node/v22.22.2/bin:/usr/local/bin:/usr/bin:/bin"
 
 PM2_CMD="/root/.nvm/versions/node/v22.22.2/bin/pm2"
 
-
-
 cd /opt/test_apps/pm2_test
 
-$PM2_CMD start server.js --name "pm2_test_1" --output ./output.log  
+$PM2_CMD reload pm2_test_1 || \
+$PM2_CMD start server.js --name "pm2_test_1" --output ./output.log --error ./error.log
