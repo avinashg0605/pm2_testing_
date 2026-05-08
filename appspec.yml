@@ -3,7 +3,7 @@ os: linux
 
 files:
   - source: /
-    destination: /opt/test-pm2_
+    destination: /opt/pm2_test
 hooks:
   AfterInstall:
     - location: scripts/install_dependencies.sh

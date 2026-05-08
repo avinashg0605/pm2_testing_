@@ -1,5 +1,5 @@
 {
-  "name": "pm2-test-app",
+  "name": "hello-app",
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
