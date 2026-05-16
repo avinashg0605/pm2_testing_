@@ -2,6 +2,7 @@
 
 #!/bin/bash
 
+<<<<<<< HEAD
 # export NVM_DIR="/root/.nvm"
 # export PATH="$NVM_DIR/versions/node/v22.22.2/bin:/usr/local/bin:/usr/bin:/bin"
 
@@ -49,5 +50,22 @@ npm install --production
 # Save PM2 process list
 "$PM2_CMD" save
 
+=======
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+
+cd $APP_PATH
+
+NODE_VERSION=$(nvm current)
+
+# export NVM_DIR="/root/.nvm"
+# export PATH="$NVM_DIR/versions/node/v22.22.2/bin:/usr/local/bin:/usr/bin:/bin"
+
+# PM2_CMD="/root/.nvm/versions/node/v22.22.2/bin/pm2"
+>>>>>>> d759a18d5644a29756fff838a6b5573760501951
 
 
+<<<<<<< HEAD
+=======
+# $PM2_CMD reload pm2_test_1 || \
+nvm exec $NODE_VERSION pm2 start server.js --name "pm2_test_1" --output ./output.log --error ./error.log
+>>>>>>> d759a18d5644a29756fff838a6b5573760501951
