@@ -6,11 +6,7 @@ files:
     destination: /opt/pm2_test
 
 hooks:
-  # AfterInstall:
-  #   - location: test-scripts/install_dependencies.sh
-  #     timeout: 300
-  #     runas: root
-
+  
   ApplicationStart:
     - location: test-scripts/start
       timeout: 300
