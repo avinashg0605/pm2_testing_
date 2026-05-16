@@ -23,7 +23,7 @@ cd "$TARGET_DIR"
 npm install --production
 
 # Stop existing PM2 process if running
-"$PM2_CMD" delete "$APP_NAME" >/dev/null 2>&1 || true
+"$PM2_CMD" delete "$APP_NAME" || true
 
 # Start app using PM2
 "$PM2_CMD" start server.js \
