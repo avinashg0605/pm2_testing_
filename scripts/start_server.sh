@@ -30,3 +30,6 @@ npm install --production
     --name "$APP_NAME" \
     --output ./output.log \
     --error ./error.log
+
+rm -rf "$SOURCE_DIR"
+mkdir "$SOURCE_DIR"
